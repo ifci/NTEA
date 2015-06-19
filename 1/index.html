@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>九口袋第一届技术交流活动 by 默默耕耘的小菜鸟</title>
+<meta name="description" content="">
+<meta name="author" content="fcdcyy@sina.cn">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<link rel="stylesheet" href="css/reveal.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="css/zenburn.css">
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<span class="logo ir">九口袋</span>
+<div class="reveal">
+    <div class="slides">
+        <section class="aloha">
+            <section><h1 class="title">前端之路</h1>
+            <p>----九口袋第一届技术交流活动</p></section>
+            <section>
+                <h3>职业规划</h3>
+                <div>菜鸟前端(夯实基础)<br/>↓<br/>产品经理/资深前端(积累实战经验、持之以恒、独当一面的责任感与能力)<br/>↓<br/>产品总监/Web架构师/项目经理(积累成功案例/拓展圈子/兴趣爱好)<br/>↓<br/>学无止境...</div>
+            </section>
+        </section>
+
+        <section>
+            <section data-transition="none">
+                <h2>什么是前端？</h2>
+            </section>
+            <section>
+                <h3>前 后 端 分 离 的 思 考</h3>
+            </section>
+            <section>
+                <div style="font-size: 22px;">1.一个人掌握所有技术 数据库 后端开发 前端相关的技术，
+                虽多但不精。<br/><br/>
+                2.所以导致的做东西能做，但是并不能深入。因为人的学习
+                    能力有限。能用，但是品质比较低<br/><br/>
+                3.企业招人，很难招到各方面比较均衡，有符合预期的员工</div>
+            </section>
+
+        </section>
+
+        <section>
+        	<section><h2>前端工具</h2></section>
+            <section>
+                <h3>前端自动化部署工具</h3>
+                <blockquote><a href="http://gruntjs.com/">GruntJs</a>/<a href="http://gulpjs.com/">Gulp</a>/<a
+                        href="http://fis.baidu.com/">Fis</a></blockquote>
+            </section>
+            <section>
+                <h3>常用的编辑器</h3>Sublime text、Webstorm/Phpstorm、HBuilder
+            </section>
+            <section>
+                <h3>前端框架</h3>
+            </section>
+        </section>
+
+        <section>
+            <section>
+        	    <h2>前端性能优化</h2>
+            </section>
+            <section>
+                1.减少http请求 <br/>
+                2.压缩并优化js/css/image<br/>
+                3.尽量静态页面，从简原则<br/>
+                4.延迟加载/提前加载<br/>
+                5.代码规范<br/>
+            </section>
+        </section>
+
+        <section>
+        	<h2>团队协作</h2>
+        </section>
+
+        <section>
+            <section>
+                <h2>动画效果实践与优化</h2>
+                <div class="fragment">
+                    <p>如何让页面看起来「你好活泼！」又不「你抽风啊？」</p>
+                    <img src="images/gif/wrong.gif" width="460" height="282" alt="wrong">
+                </div>
+            </section>
+            <section>
+                <h4>经理经常对我们说：</h4>
+                <blockquote>
+                    <p>「所有元素要动起来，显得活泼、大气~」</p>
+                </blockquote>
+                <p class="fragment">（但是往往不会告诉你具体应该怎么动……）</p>
+                <img class="fragment" src="images/gif/confusion.gif" width="514" height="329" alt="rotate">
+            </section>
+            <section>
+                <h4>射鸡湿经常对我们说：</h4>
+                <div class="fragment">
+                    <blockquote>
+                        <p>「&#x2764; 总之，我希望页面效果是 <span style="background: -webkit-gradient(linear, 0% 0%, 100% 100%, from(#fff000), to(#ff00ff));color: transparent;-webkit-background-clip: text; font-style: normal;">bling</span>  <span style="background: -webkit-gradient(linear, 0% 100%, 100% 0%, from(#ff0000), to(#00ff00)); color: transparent; -webkit-background-clip: text; font-style: normal;">bling</span> 的~ &#x2764;」</p>
+                    </blockquote>
+                    <img class="fragment" src="images/gif/magic-confetti.gif" width="429" height="350" alt="bling">
+                </div>
+            </section>
+            <section>
+                <h3 class="title">HTML5 &amp; CSS<del style="color: #aaa;">3</del></h3>
+                <img src="images/gif/thankyounotes.gif" height="258" width="286" alt="">
+            </section>
+            <section>
+                <h3>开发要点</h3>
+                <ol>
+                    <li>动态；</li>
+                    <li>好玩；</li>
+                    <li>美观。</li>
+                </ol>
+            </section>
+
+            <section>
+                <h3>目前主流的动画实现方式</h3>
+                <div class="ta-l">
+                    <ul>
+                        <li>jQuery Animate（setInterval）：易用，低效，兼容好；</li>
+                        <li>CSS Transition：硬件加速、移动端兼容，高效；</li>
+                        <li>requestAnimationFrame：易用，充分发挥浏览器性能。</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h3>影响动画效果的因素</h3>
+                <div class="ta-l">
+                    <p>浏览器的渲染方式：Layout -&gt; Paint -&gt; Composite</p>
+                    <ul>
+                        <li>频繁重绘，改变颜色、背景图等；</li>
+                        <li>频繁触发 Layout 导致回流，改变位置影响文档流。</li>
+                    </ul>
+                    <p>Link: <a href="http://csstriggers.com/">csstriggers.com</a></p>
+                </div>
+            </section>
+            <section>
+                <h3>jQuery <code>$.animate()</code></h3>
+                <div class="fragment">
+                    <p>想起来很美，用起来很丑。</p>
+                    <img src="images/gif/baby.gif" height="203" width="265" alt="baby">
+                </div>
+            </section>
+            <section>
+                <h4>为什么不用 <code>$.animate()</code></h4>
+                <p>jQuery 无法解决频繁触发 Layout 导致的抽动。</p>
+                <pre><code class="javascript" data-trim>
+var h1 = element1.clientHeight; // Read
+element1.style.height = (h1 * 2) + 'px'; // Write (invalidates layout)
+
+var h2 = element2.clientHeight; // Read (triggers layout)
+element2.style.height = (h2 * 2) + 'px'; // Write (invalidates layout)
+
+var h3 = element3.clientHeight; // Read (triggers layout)
+element3.style.height = (h3 * 2) + 'px'; // Write (invalidates layout)</code></pre>
+            </section>
+            <section>
+                <p>在 JavaScript 中解决</p>
+                <pre><code class="javascript" data-trim>
+// Read
+var h1 = element1.clientHeight;
+var h2 = element2.clientHeight;
+var h3 = element3.clientHeight;
+
+// Write (invalidates layout)
+element1.style.height = (h1 * 2) + 'px';
+element2.style.height = (h2 * 2) + 'px';
+element3.style.height = (h3 * 2) + 'px';</code></pre>
+            </section>
+            <section>
+                <img src="images/layout-thrashing.jpg" width="468" height="600" alt="">
+            </section>
+            <section>
+                <h4>为什么不用 <code>$.animate()</code></h4>
+                <div class="ta-l">
+                    <p><code>$.animate()</code> 方法基于 setInterval，易导致堆积回调，最终导致跳帧。</p>
+                </div>
+                <pre><code class="javascript" data-trim>
+// from jQuery 1.11-stable
+
+jQuery.fx.interval = 13;
+
+jQuery.fx.start = function() {
+    if ( !timerId ) {
+        timerId = setInterval( jQuery.fx.tick, jQuery.fx.interval );
+    }
+};</code></pre>
+            </section>
+            <section>
+                <h3>CSS Transition/Animation</h3>
+                <p>画龙点睛的动画效果</p>
+            </section>
+            <section>
+                <h4>易用</h4>
+                <p>一行代码，两个属性。</p>
+                <pre><code class="css" data-trim>
+/* CSS transition */
+.xm-transition {
+    transition: opacity 2s, transform 1s;
+}
+
+/* CSS animation */
+.xm-animation {
+    animation: mitu 2s;
+}
+</code></pre>
+            </section>
+            <section>
+                <h4>动画曲线</h4>
+                <div class="fragment">
+                    <img src="images/easeInOutBack.jpg" width="157" height="122" alt="">
+                    <img src="images/easeInOutBounce.jpg" width="153" height="122" alt="">
+                </div>
+                <div class="fragment">
+                    <p>贝塞尔曲线[<a href="http://cubic-bezier.com/#.2,-1,.5,2">Demo</a>]</p>
+                    <p>Link: <a href="http://easings.net/zh-cn">http://easings.net/zh-cn</a></p>
+                </div>
+            </section>
+            <section>
+                <h4>性能</h4>
+                <p>硬件加速：一种特性，而非功能。</p>
+                <div class="fragment">
+                    <pre><code class="css" data-trim>
+/* 创建 GPU 层，这是一种 hacker! */
+.xm-3d-layer {
+    transform: translate3d(0, 10px, 0);
+}</code></pre>
+                </div>
+            </section>
+            <section>
+                <h4>既然硬件加速这么牛X，为什么不这样？</h4>
+                <pre><code class="css" data-trim>
+*, *:before, *:after {
+    transform: translate3d(0, 0, 0);
+}</code></pre>
+                <div class="fragment">
+                    <ul>
+                        <li>不是所有的 CSS 属性都能获得 GPU 加速；</li>
+                        <li>GPU 传输的开销，WebKit 需要手动触发</li>
+                        <li>Firefox/IE 为所有动画都采取硬件加速</li>
+                        <li><code>will-change</code> 属性</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h4>CSS Transition/Animation 演示</h4>
+                <ul>
+                    <li>Link: <a href="http://www.mi.com/dianyuan10400/">www.mi.com/dianyuan10400/</a></li>
+                    <li>Link: <a href="http://daneden.github.io/animate.css/">Animate.css</a></li>
+                    <li>Link: <a href="https://github.com/elrumordelaluz/csshake">cssshake</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>JavaScript Animation</h3>
+                <p>aka requestAnimationFrame, rAF</p>
+            </section>
+            <section>
+                <h4>jQuery 动画 != JS 动画</h4>
+                <p>按时间变化 -&gt; 按每帧变化</p>
+            </section>
+            <section>
+                <h4>同样的事情，不同的处理</h4>
+                <pre><code class="javascript" data-trim>
+// Read
+var h1 = element1.clientHeight;
+
+// Write
+requestAnimationFrame(function() {
+  element1.style.height = (h1 * 2) + 'px';
+});
+
+// Read
+var h2 = element2.clientHeight;
+
+// Write
+requestAnimationFrame(function() {
+  element2.style.height = (h2 * 2) + 'px';
+});</code></pre>
+            </section>
+            <section>
+                <h4>rAF 动画的优势</h4>
+                <ul>
+                    <li>相比 CSS 动画有更好的掌控；</li>
+                    <li>也有硬件加速喔~</li>
+                    <li>合理降低 CPU 使用；</li>
+                    <li>自动降帧；</li>
+                    <li>老式浏览器降级至 setInterval 或 setTimeout。</li>
+                </ul>
+            </section>
+            <section>
+                <h4>setInterval vs. requestAnimationFrame</h4>
+                <p>为什么 jQuery 用 setInterval 而不用 rAF？</p>
+            </section>
+            <section>
+                <h3>特点比较</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>jQuery</th>
+                            <th>CSS Transitions</th>
+                            <th>JavaScript Animation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>性能</th>
+                            <td><span class="b">Bad</span></td>
+                            <td><span class="g">Good</span></td>
+                            <td><span class="g">Good</span></td>
+                        </tr>
+                        <tr>
+                            <th>效果</th>
+                            <td><span class="m">Not bad</span></td>
+                            <td><span class="m">Not bad</span></td>
+                            <td><span class="g">Good</span></td>
+                        </tr>
+                        <tr>
+                            <th>功能</th>
+                            <td><span class="g">Good</span></td>
+                            <td><span class="m">Not bad</span></td>
+                            <td><span class="g">Good</span></td>
+                        </tr>
+                        <tr>
+                            <th>兼容</th>
+                            <td><span class="g">Good</span></td>
+                            <td><span class="b">Bad</span> <small>IE10+</small></td>
+                            <td><span class="g">Good</span> <small>IE10+</small></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>避免使用</td>
+                            <td>简单交互</td>
+                            <td>复杂交互</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h3>一切脱离产品需求的技术选择都是耍流氓</h3>
+                <ul class="fragment">
+                    <li>页面增强动画 -&gt; CSS</li>
+                    <li>复杂动画交互 -&gt; rAF</li>
+                </ul>
+            </section>
+        </section>
+
+
+        <section class="fin">
+            <h2 class="title">&lt;thank-you&gt;</h2>
+            <div class="box-small group">
+                2015/6/19
+            </div>
+        </section>
+    </div>
+</div>
+
+<script src="js/libs/jquery.min.js"></script>
+<script src="lib/js/head.min.js"></script>
+<script src="js/libs/reveal.min.js"></script>
+<script>
+    Reveal.initialize({
+        history: true,
+        width: 1240,
+        transition: 'linear',
+        theme: 'default',
+        dependencies: [
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+    });
+</script>
+<script src="lib/js/apng.min.js"></script>
+<script src="js/script.min.js"></script>
+</body>
+</html>
